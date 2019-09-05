@@ -20,18 +20,18 @@ module.exports = {
     // 博客数据源 目前只适配notion
     blog: {
         sourceType: 'notion',
-        url: 'https://www.notion.so/99623ef9630940cdb8524ba355831677?v=8366741ca7dd4b339c19484712e13563', // notion中文章表的链接
+        url: 'https://www.notion.so/lstheart/f10bc5a6036042a28ec4823f605315aa?v=17152e9b6f444d66886519137dbb58fc', // notion中文章表的链接
         // 建议开启，可以大大提高build速度
         // 访问 https://github.com/settings/tokens 获取token 
-        // export GitHubToken='yourtokenhere'
-        openGithubCache: false, // 开启此配置后，notion页面的数据会缓存到github仓库。需要在环境变量中配置 GitHubToken
+        export GitHubToken='46fd94f31fd0747aedf9a1e5846dd8bc5e404d29'
+        openGithubCache: true, // 开启此配置后，notion页面的数据会缓存到github仓库。需要在环境变量中配置 GitHubToken
         github: {
-            username: 'mayneyao', // github 用户名
-            repo: 'blog', // 作为blog缓存数据仓库的名称
+            username: 'lstheart', // github 用户名
+            repo: 'Notion-Blog', // 作为blog缓存数据仓库的名称
             branch: 'master' // 作为blog缓存数据仓库的分支
         },
         search: {
-            open: false,
+            open: true,
             url: '/.netlify/functions/search'
         }
     },
@@ -102,7 +102,7 @@ module.exports = {
     seo: {
         open: false, // 如果部署在netlify上，为了更好的seo，请开启此选项
         siteUrl: 'https://gine.me', // 站点url
-        netlifyUrl: 'https://gine.netlify.com' //netlify分配的url
+        netlifyUrl: 'https://stoic-swartz-e6507e.netlify.com/' //netlify分配的url
     },
 
     // sitemap
