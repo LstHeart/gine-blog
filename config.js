@@ -102,7 +102,7 @@ module.exports = {
     seo: {
         open: false, // 如果部署在netlify上，为了更好的seo，请开启此选项
         siteUrl: 'https://gine.me', // 站点url
-        netlifyUrl: 'https://stoic-swartz-e6507e.netlify.com/' //netlify分配的url
+        netlifyUrl: 'https://lstheart.netlify.com' //netlify分配的url
     },
 
     // sitemap
